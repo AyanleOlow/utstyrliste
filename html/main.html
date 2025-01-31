@@ -1,39 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>utstyr Liste</title>
-    <link rel="stylesheet" href="/css/main.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+  <body>
     <div class="h1">
-        <h1>Utstyr Liste</h1>
-
-    </div>
-  
-
-    <div class="items">
-    <div><img src="/picture/kamera.jpg" alt=""  style="width: 200px; height: 200px;"></div>
-    <div><img src="/picture/lys01.jpg" alt=""   style="width: 200px; height: 200px;"></div>
-    <div><img src="/picture/lys02.webp" alt=""  style="width: 200px; height: 200px;"></div>
-    <div><img src="/picture/stativ.jpg" alt=""  style="width: 200px; height: 200px;"></div>
-    <div><img src="/picture/tastatur.jpg" alt=""style="width: 200px; height: 200px;"></div>
-    
+      <h1>Utstyr Liste</h1>
     </div>
 
-  <div class="section"> 
-    <section>
-        <h2>Dynamisk liste</h2>
-        <ul id="liste"></ul>
-        <input id="nyttElement" type="text" placeholder="Legg til et element">
-        <button id="leggTil">Legg til</button>
-    </section>
+ <div class="allbox">
+    <div id="items" class="items">
+        <div class="box1">
+            <div class="utstyr1">Kamera</div>
+            <div class="box1text">
+                <p id="tilgjenglig">Tilgjengelig:</p> 
+                <p class="boxtext" id="counter1">0</p>
+            </div>
+            <button class="subtractBtn" data-counter="counter1">utlei</button>
+            <button class="addBtn" data-counter="counter1">Legg tilbake</button>
+            <img
+                src="../picture/kamera-removebg-preview.png"
+                alt=""
+                style="width: 200px; height: 200px;"
+            />
+        </div>
+        <div class="box2">
+            <div class="utstyr2">lys 01</div>
+            <div class="box1text">
+                <p id="tilgjenglig">Tilgjengelig:</p> 
+                <p class="boxtext" id="counter2">0</p>
+            </div>
+            <button class="subtractBtn" data-counter="counter2">utlei</button>
+            <button class="addBtn" data-counter="counter2">Legg tilbake</button>
+            <img
+                src="../picture/lys01-removebg-preview.png"
+                alt=""
+                style="width: 200px; height: 200px"
+            />
+        </div>
+        <div class="box3">
+            <div class="utstyr3">lys 02</div>
+            <div class="box1text">
+                <p id="tilgjenglig">Tilgjengelig:</p> 
+                <p class="boxtext" id="counter3">0</p>
+            </div>
+            <button class="subtractBtn" data-counter="counter3">utlei</button>
+            <button class="addBtn" data-counter="counter3">Legg tilbake</button>
+            <img
+                src="../picture/lys02-removebg-preview.png"
+                alt="lys 02"
+                style="width: 200px; height: 200px"
+            />
+        </div>
+        
+        <div class="box4">
+            <div class="utstyr4">stativ</div>
+            <div class="box1text">
+                <p id="tilgjenglig">Tilgjengelig:</p> 
+                <p class="boxtext" id="counter4">0</p>
+            </div>
+            <button class="subtractBtn" data-counter="counter4">utlei</button>
+            <button class="addBtn" data-counter="counter4">Legg tilbake</button>
+            <img
+                src="../picture/stativ-removebg-preview.png"
+                alt=""
+                style="width: 200px; height: 250px"
+            />
+        </div>
+        <div class="box5">
+            <div class="utstyr5">tastatur</div>
+            <div class="box1text">
+                <p id="tilgjenglig">Tilgjengelig:</p> 
+                <p class="boxtext" id="counter5">0</p>
+            </div>
+            <button class="subtractBtn" data-counter="counter5">utlei</button>
+            <button class="addBtn" data-counter="counter5">Legg tilbake</button>
+            <img
+                src="../picture/tastatur-removebg-preview.png"
+                alt=""
+                style="width: 200px; height: 200px"
+            />
+        </div>
     </div>
+</div>
 
-</body>
-<script src="/js/main.js" >
 
-</script>
+
+    <div class="section">
+      <section>
+        <label for="myfile">Select files:</label>
+        <input type="file" id="myFile" name="myfile" multiple />
+        <button id="legg-til">legg til</button>
+      </section>
+    </div>
+  </body>
+  <script src="/js/main.js"></script>
 </html>
+3
